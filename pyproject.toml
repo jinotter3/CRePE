@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crepe-video"
+version = "1.0.0"
+description = "CRePE: Curved Ray Expectation Positional Encoding for Unified-Camera-Controlled Video Generation"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Seonghyun Jin" }, { name = "Youngmin Kim" }, { name = "Sunwoo Park" }, { name = "Jong Chul Ye" },
+]
+dependencies = [
+  "torch>=2.4", "numpy<2", "einops", "safetensors", "transformers>=4.46", "sentencepiece", "protobuf",
+  "ftfy", "regex", "huggingface_hub", "imageio", "imageio-ffmpeg", "tqdm", "pillow",
+]
+
+[project.urls]
+Homepage = "https://crepe-neurips2026.github.io"
+Repository = "https://github.com/jinotter3/CRePE"
+Paper = "https://arxiv.org/abs/2605.12938"
+
+[project.optional-dependencies]
+train = ["lightning>=2.4", "jsonargparse[signatures]>=4.27", "omegaconf", "deepspeed", "decord"]
+
+[tool.setuptools.packages.find]
+include = ["crepe*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,72 @@
+[
+ {
+  "name": "01_fox_fisheye",
+  "caption": "A majestic red fox sitting on a moss-covered rock in an enchanted autumn forest, glowing golden leaves drifting through shafts of warm sunlight, soft volumetric light rays and floating dust particles, as the camera moves in a smooth arc around the fox, cinematic and highly detailed.",
+  "trajectory": "demo/trajectories/panshot_aQVLCO-OOqM-11-1-no_rot_aug_0.npy",
+  "x_fov": 160.0,
+  "xi": 1.5
+ },
+ {
+  "name": "03_neon_city_drive",
+  "caption": "A first-person fisheye view driving through a rain-soaked cyberpunk city at night, towering skyscrapers covered in glowing pink, cyan and violet neon signs, holographic billboards flickering overhead, vivid reflections shimmering on the wet street, cinematic and vibrant.",
+  "trajectory": "demo/trajectories/panshot_N99hmkAJwlQ-3-0-yaw_aug_0.npy",
+  "x_fov": 180.0,
+  "xi": 2.0
+ },
+ {
+  "name": "04_ski_pov",
+  "caption": "A first-person action camera view skiing fast down a powdery snow slope between tall snow-covered pine trees on a bright sunny day, fresh snow spraying into the air, deep blue sky and glittering sunlight, dynamic and exhilarating.",
+  "trajectory": "demo/trajectories/panshot_N99hmkAJwlQ-3-0-linear_aug_0.npy",
+  "x_fov": 180.0,
+  "xi": 2.0
+ },
+ {
+  "name": "05_sea_turtle_reef",
+  "caption": "A first-person ultra-wide fisheye view swimming alongside a graceful sea turtle over a vibrant coral reef, colorful corals in orange, purple and pink, schools of tropical fish swirling around, shimmering sunbeams piercing the clear turquoise water from above, cinematic underwater scene.",
+  "trajectory": "demo/trajectories/panshot_1jVPI3bNCBc-5-0-no_rot_aug_0.npy",
+  "x_fov": 190.0,
+  "xi": 2.1
+ },
+ {
+  "name": "06_aurora_lake",
+  "caption": "A time-lapse night view from the shore of a frozen lake surrounded by snow-covered mountains, brilliant green and purple aurora borealis swirling across a star-filled sky above the peaks, the aurora reflected on the glassy ice, breathtaking and cinematic.",
+  "trajectory": "demo/trajectories/panshot_HTdKkiu771g-3-0-no_rot_aug_0.npy",
+  "x_fov": 180.0,
+  "xi": 2.0
+ },
+ {
+  "name": "07_corgi_cherry",
+  "caption": "A close-up ground-level fisheye view following a fluffy corgi trotting happily along a stone path lined with cherry blossom trees in full bloom, soft pink petals drifting through the warm spring sunlight, dreamy and colorful.",
+  "trajectory": "demo/trajectories/re10k_ecc2b1b9cb1fa9ad.npy",
+  "x_fov": 170.0,
+  "xi": 1.8
+ },
+ {
+  "name": "08_coastal_city_sunset",
+  "caption": "Aerial view ascending above a futuristic coastal city at golden sunset, glass skyscrapers glowing in warm orange and pink light, the ocean shimmering on the horizon, soft clouds lit by the setting sun, cinematic and grand.",
+  "trajectory": "demo/trajectories/re10k_5451cefde53f06f1.npy",
+  "x_fov": 150.0,
+  "xi": 1.0
+ },
+ {
+  "name": "10_lantern_festival",
+  "caption": "A night lantern festival in an old Asian riverside town, hundreds of glowing paper lanterns floating up into the dark sky, warm orange light reflecting on the calm river, wooden houses with curved roofs, magical and cinematic.",
+  "trajectory": "demo/trajectories/re10k_f74139ac48f19b3c.npy",
+  "x_fov": 150.0,
+  "xi": 1.2
+ },
+ {
+  "name": "12_airplane_night_city",
+  "caption": "A view from an airplane window at night above a sprawling city glowing with golden lights, the wing silhouetted against a deep blue sky full of stars, the city lights twinkling far below, calm and beautiful.",
+  "trajectory": "demo/trajectories/panshot_YUPoNo1j420-5-0-no_rot_aug_0.npy",
+  "x_fov": 200.0,
+  "xi": 2.3
+ },
+ {
+  "name": "13_waterfall_canyon",
+  "caption": "A dramatic first-person drone flight racing through a lush green canyon toward a massive waterfall, white mist billowing up, a vivid rainbow arching across the spray, sunlight glowing on the wet rocks, epic and cinematic.",
+  "trajectory": "demo/trajectories/panshot_N99hmkAJwlQ-3-0-linear_aug_0.npy",
+  "x_fov": 170.0,
+  "xi": 1.8
+ }
+]

@@ -1,0 +1,59 @@
+{
+ "re10k_traj_normalization": 0.9569655060768127,
+ "trajectories": {
+  "re10k_5451cefde53f06f1": {
+   "source": "RealEstate10K test split (pose_files/test/5451cefde53f06f1.txt)",
+   "frames": 81,
+   "dtype": "float64",
+   "near_depth": null
+  },
+  "re10k_ecc2b1b9cb1fa9ad": {
+   "source": "RealEstate10K test split (pose_files/test/ecc2b1b9cb1fa9ad.txt)",
+   "frames": 81,
+   "dtype": "float64",
+   "near_depth": null
+  },
+  "re10k_f74139ac48f19b3c": {
+   "source": "RealEstate10K test split (pose_files/test/f74139ac48f19b3c.txt)",
+   "frames": 81,
+   "dtype": "float64",
+   "near_depth": null
+  },
+  "panshot_1jVPI3bNCBc-5-0-no_rot_aug_0": {
+   "source": "PanShot test split (pose-test/1jVPI3bNCBc-5-0-no_rot_aug_0.npy)",
+   "frames": 81,
+   "dtype": "float32",
+   "near_depth": 0.08683279156684875
+  },
+  "panshot_HTdKkiu771g-3-0-no_rot_aug_0": {
+   "source": "PanShot test split (pose-test/HTdKkiu771g-3-0-no_rot_aug_0.npy)",
+   "frames": 81,
+   "dtype": "float32",
+   "near_depth": 0.6066437363624573
+  },
+  "panshot_N99hmkAJwlQ-3-0-linear_aug_0": {
+   "source": "PanShot test split (pose-test/N99hmkAJwlQ-3-0-linear_aug_0.npy)",
+   "frames": 81,
+   "dtype": "float32",
+   "near_depth": 0.6052680015563965
+  },
+  "panshot_N99hmkAJwlQ-3-0-yaw_aug_0": {
+   "source": "PanShot test split (pose-test/N99hmkAJwlQ-3-0-yaw_aug_0.npy)",
+   "frames": 81,
+   "dtype": "float32",
+   "near_depth": 0.6052680015563965
+  },
+  "panshot_YUPoNo1j420-5-0-no_rot_aug_0": {
+   "source": "PanShot test split (pose-test/YUPoNo1j420-5-0-no_rot_aug_0.npy)",
+   "frames": 81,
+   "dtype": "float32",
+   "near_depth": 0.7787190079689026
+  },
+  "panshot_aQVLCO-OOqM-11-1-no_rot_aug_0": {
+   "source": "PanShot test split (pose-test/aQVLCO-OOqM-11-1-no_rot_aug_0.npy)",
+   "frames": 81,
+   "dtype": "float32",
+   "near_depth": 0.9803633689880371
+  }
+ }
+}

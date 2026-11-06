@@ -1,0 +1,59 @@
+# CRePE (released "crepe" checkpoint): effective batch 16 = 2 GPUs x 8, 10k steps.
+seed_everything: 0
+trainer:
+  accelerator: gpu
+  devices: 2
+  num_nodes: 1
+  strategy:
+    class_path: lightning.pytorch.strategies.DeepSpeedStrategy
+    init_args:
+      stage: 1
+      exclude_frozen_parameters: true   # checkpoints only hold the adapter
+  precision: bf16-true
+  max_epochs: 10
+  limit_train_batches: 1000             # 10 x 1000 = 10k optimizer steps
+  log_every_n_steps: 10
+  benchmark: true
+  num_sanity_val_steps: 0
+  default_root_dir: logs/crepe
+  logger:
+    class_path: lightning.pytorch.loggers.CSVLogger   # or lightning.pytorch.loggers.WandbLogger
+    init_args:
+      save_dir: logs/crepe
+  callbacks:
+    - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+      init_args:                        # saved under <logger dir>/checkpoints
+        save_last: true
+        every_n_epochs: 1
+        save_top_k: -1
+    - class_path: lightning.pytorch.callbacks.LearningRateMonitor
+      init_args:
+        logging_interval: step
+model:
+  wan_dir: models/Wan-AI/Wan2.1-T2V-1.3B
+  learning_rate: 1.0e-4
+  height: 480
+  width: 832
+  use_gradient_checkpointing: true
+  shared_noise: true
+  crepe_layer_start: 10
+  crepe_layer_count: 10
+  num_breakpoints: 5
+  attn_compress: 8
+  point_sample_mode: clamped            # radial interval clamped to [-3, 3] in log-distance
+  radial_supervision: true
+  radial_target_layer: 15
+  radial_loss_weight: 1.0e-3
+  radial_min_timestep: 0.03
+  radial_head_only: false               # the radial loss also trains the adapter
+  radial_target_scale: near_depth       # UniK3D distances / PanFlow near-plane depth (as the trajectories)
+  radial_confidence_alpha: 0.2
+  export_dir: logs/crepe/adapters    # adapter-only .safetensors every 1000 steps
+  export_every_n_steps: 1000
+data:
+  data_root: data/UCPE
+  latent_cache_dir: data/UCPE/PanShot/cache-Wan2.1-T2V-1.3B-train
+  radial_cache_dir: data/UCPE/PanShot/radial-cache-unik3d-vitl-train
+  batch_size: 8
+  num_workers: 4
+  zero_first_yaw: true

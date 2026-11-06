@@ -1,0 +1,23 @@
+# Tested with Python 3.10, torch 2.7.1 (CUDA 12.8). Install torch for your CUDA first.
+torch>=2.4
+numpy<2
+einops
+safetensors
+transformers>=4.46
+sentencepiece
+protobuf
+ftfy
+regex
+huggingface_hub
+imageio
+imageio-ffmpeg
+tqdm
+pillow
+# training
+lightning>=2.4
+jsonargparse[signatures]>=4.27
+omegaconf
+deepspeed
+decord
+# tests
+pytest

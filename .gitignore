@@ -1,0 +1,24 @@
+# large local files
+models/
+checkpoints/
+outputs/
+logs/
+data/*
+!data/UCPE/
+data/UCPE/*
+!data/UCPE/PanFlow/
+huggingface/*.safetensors
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+.venv/
+wandb/
+.DS_Store
+
+# prepared external-video samples (scripts/prepare_video.py)
+samples/
